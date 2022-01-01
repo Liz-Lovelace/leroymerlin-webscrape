@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Леруа Мерлен Поиск</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./titleicon.jpg" />
+  </head>
+  <body>
+    <h1 style="text-align:center;">Поиск изображений Leroy Merlin</h1>
+    <p style="text-align:right;">Михаил Иванов - ivanov060404@gmail.com</p>
+    <textarea name="text1" id ="txtList" class="txt" placeholder="Ссылки, через пробелы или переносы строки"></textarea>
+    <br>
+    <p style="display:inline-block;">Максимальное число фото -</p> <input id = "maxpics" type="number" value="15" style="width:40px; display:inline-block;">
+    <br>
+    <p style="display:inline-block;">Максимальное число фото (в интерьере)-</p> <input id = "maxpicsi" type="number" value="10" style="width:40px; display:inline-block;">
+    <br>
+    <input type = "checkbox" id = "rmimg">Добавлять результат к концу</input>
+    <br><br>
+    <input type="radio" id="radpng" name="format" checked>PNG</input>
+    <br>
+    <input type="radio" id="radjpg" name="format">JPG</input>
+    <br>
+    <input type="radio" id="radwebp" name="format">WEBP</input>
+    <br>
+    <input type="radio" id="radbmp" name="format">BMP</input>
+    <br>
+    <input type="radio" id="radgif" name="format">GIF</input>
+    <br>
+    <button id="launch" class="launchbtn">НАЙТИ</button>
+    <div id = imagecont>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
